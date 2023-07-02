@@ -4,7 +4,7 @@ To run this application, you need [Docker](https://docs.docker.com/engine/instal
 
 Now fork and clone this repository, and then run the commands - 
 1. `docker build -t <docker-hub-username>/flask-container:1.0.0 .`
-2. `docker run -p 5000:5000 <docker-hub-username>/flask-container:1.0.0`
+2. `docker run -p 8000:8000 <docker-hub-username>/flask-container:1.0.0`
 
 This will start your Flask app that runs on - HTTP://172.17.0.2:5000
 
