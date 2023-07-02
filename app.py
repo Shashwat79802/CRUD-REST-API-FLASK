@@ -2,12 +2,21 @@ from flask import Flask, request, jsonify
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 from bson.json_util import dumps
+from dotenv import load_dotenv
+import os
 
+
+load_dotenv()
 
 app = Flask(__name__)
-client = MongoClient('mongodb+srv://shashwat79802:shashwat79802@cluster0.ota7y4c.mongodb.net/test')
-db = client['Unheard']
-collection = db['User']
+
+connection_string = os.environ["CONNECTION_STRING"]
+database = os.environ["DATABASE"]
+db_collection = os.environ["COLLECTION"]
+
+client = MongoClient(connection_string)
+db = client[database]
+collection = db[db_collection]
 
 
 # GET /users - Returns a list of all users
