@@ -6,7 +6,7 @@ Now fork and clone this repository, and then run the commands -
 1. `docker build -t <docker-hub-username>/flask-container:1.0.0 .`
 2. `docker run -p 8000:8000 <docker-hub-username>/flask-container:1.0.0`
 
-This will start your Flask app that runs on - HTTP://172.17.0.2:5000
+This will start your Flask app that runs on - `http://172.17.0.2:5000`
 
 Now you can use any testing tool like Postman to hit the following endpoints and verify the results-
 1. `GET /users` - To fetch all the user records.
