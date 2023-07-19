@@ -1,12 +1,7 @@
 # Flask-MongoDB REST API
 
-To run this application, you need [Docker](https://docs.docker.com/engine/install/) installed in your respective application and must be logged in to [Docker Hub](https://hub.docker.com/).
-
-Now fork and clone this repository, and then run the commands - 
-1. `docker build -t <docker-hub-username>/flask-container:1.0.0 .`
-2. `docker run -p 8000:8000 <docker-hub-username>/flask-container:1.0.0`
-
-This will start your Flask app that runs on - `http://172.17.0.2:5000`
+Now fork and clone this repository, and then run the command - `pip install -r requirements.txt` and `python3 app.py`
+This will start your Flask app that runs on - `http://127.0.0.1:5000`
 
 Now you can use any testing tool like Postman to hit the following endpoints and verify the results-
 1. `GET /users` - To fetch all the user records.
